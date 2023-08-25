@@ -89,7 +89,7 @@ void parseFile (const char* filename)
     {
 	if (_prompt)
     	{
-	    int answer = 'n';
+	    char answer = 'n';
 	    puts("Confirm rename:");
 	    printf("%s\n", oldname);
 	    puts("to");
