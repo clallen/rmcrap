@@ -33,6 +33,7 @@ Version history:
 
 04-22-03	1.10:	Wow, almost 3 years between releases, and I've been using it the whole
 			time.  Must mean it's very stable. :^)
+
 			In parseFile, I changed
 				char buffer[PATH_MAX];
 			to
@@ -40,6 +41,7 @@ Version history:
 			which gives a nice clean buffer to work with, and prevents a nasty
 			segfault under certain circumstances.  Also added the corresponding
 			free(buffer) call.
+
 			Included stdlib.h in the source and stdc++ in the Makefile so the
 			program will compile under the new, improved, and picky GCC3 compiler.
 
@@ -58,10 +60,12 @@ Version history:
 			(like ".mp3" ;-)
 
 07-18-00	0.95:	From the Why-didn't-I-think-of-this-before Dept.:
+
 			Changed the character comparison method to a single
 			isalnum() instead of all that other mess.  Simplicity
-			is good.  Also updated the -h and -? output to reflect
-			this.
+			is good.
+
+            Also updated the -h and -? output to reflect this.
 
 07-15-00	0.9:	Initial release upon unsuspecting public.
 
