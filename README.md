@@ -22,25 +22,26 @@ Hope you get some use out of it.
 Version history:
 
 08-07-10	1.19:	Moved "In function X" messages from regular to verbose output.
+
 			Changed the '3' exit code to '0' because that was stupid.  
+
 			Added a "stop on error" arg.
+
 			Added error count in final output.
 
-08-29-09	1.15:	Changed return values for usage(), version() and errors, to make the
-			exit codes actually mean something.
+08-29-09	1.15:	Changed return values for usage(), version() and errors, to make the exit codes actually mean something.
+
 			Made the DIRECTORY arg mandatory.
+
 			Updated copyright and tidied up error messages.
 
-04-22-03	1.10:	Wow, almost 3 years between releases, and I've been using it the whole
-			time.  Must mean it's very stable. :^)
+04-22-03	1.10:	Wow, almost 3 years between releases, and I've been using it the whole time.  Must mean it's very stable. :^)
 
-			In parseFile, I changed
-				char buffer[PATH_MAX];
-			to
-				char *buffer = (char*)calloc(PATH_MAX, sizeof(char));
-			which gives a nice clean buffer to work with, and prevents a nasty
-			segfault under certain circumstances.  Also added the corresponding
-			free(buffer) call.
+            In parseFile, I changed
+                char buffer[PATH_MAX];
+            to
+                char *buffer = (char*)calloc(PATH_MAX, sizeof(char));
+            which gives a nice clean buffer to work with, and prevents a nasty segfault under certain circumstances.  Also added the corresponding free(buffer) call.
 
 			Included stdlib.h in the source and stdc++ in the Makefile so the
 			program will compile under the new, improved, and picky GCC3 compiler.
