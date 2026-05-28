@@ -25,10 +25,12 @@ Version history:
 			Changed the '3' exit code to '0' because that was stupid.  
 			Added a "stop on error" arg.
 			Added error count in final output.
+
 08-29-09	1.15:	Changed return values for usage(), version() and errors, to make the
 			exit codes actually mean something.
 			Made the DIRECTORY arg mandatory.
 			Updated copyright and tidied up error messages.
+
 04-22-03	1.10:	Wow, almost 3 years between releases, and I've been using it the whole
 			time.  Must mean it's very stable. :^)
 			In parseFile, I changed
